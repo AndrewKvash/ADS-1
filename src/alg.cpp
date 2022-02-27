@@ -5,7 +5,7 @@
 
 bool checkPrime(uint64_t value) {
     bool b = true;
-    for (int i = 2; i < value;i++) {
+    for (int i = 2; i < value; i++) {
         if (value % i == 0) {
             b = false;
             break;
@@ -19,7 +19,7 @@ uint64_t nPrime(uint64_t n) {
     int c = 2;
     for (int i = 1; i < n; i++) {
         ++a;
-        while(true) {		
+        while (true) {	
             if (a == c) {
                 c = 2;
             break;
@@ -60,7 +60,7 @@ uint64_t sumPrime(uint64_t hbound) {
     uint64_t a = 2;
     uint64_t sum = 0;
     uint64_t i = 2;
-    while(true){
+    while (true) {
         if (a == hbound) {
             break;
         }
